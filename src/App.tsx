@@ -5,6 +5,7 @@ import {comments} from './data/comments';
 import Post from './components/Post';
 import CommentShow from './components/Comment';
 import Replies from './components/Replies';
+import Comments from './components/Comment';
 
 function App() {
   return (
@@ -19,11 +20,13 @@ function App() {
         <div className="">
 
           {/* normal comment */}
-          <CommentShow></CommentShow>
-
-          {/* replies */}
-          {/* ต่างกันตรงที่มี padding มากกว่าเท่านั้น (pl-14) */}
-          <Replies></Replies>
+          {comments.map(elt => {return (
+                <Comments username={elt.username} 
+                          userImagePath={elt.userImagePath}  
+                          commentText={elt.commentText} 
+                          likeNum={elt.likeNum} 
+                          replies={elt.replies}/>)
+        })}
 
         </div>
 

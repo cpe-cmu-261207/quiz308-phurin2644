@@ -9,7 +9,7 @@ const Post = () => {
           </div>
 
           {/* status message */}
-          <p className='text-white'>Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207</p>
+          <p className='text-white'>Quiz ยากจังเลยครับ ของ่าย ๆ กว่านี้ได้ไหม #261207</p>
 
           {/* like section */}
           <div className='flex items-center'>
